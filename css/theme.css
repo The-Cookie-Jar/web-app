@@ -1,10 +1,10 @@
 :root {
-  --color-primary: #fdae84;
-  --color-primary-light: ;
-  --color-primary-dark: ;
-  --color-secondary: #8bcbc8;
-  --color-secondary-light: ;
-  --color-secondary-dark: ;
+  --color-primary: #ffbd6f;
+  --color-primary-light: #ffd7a9;
+  --color-primary-dark: #cc9759;
+  --color-secondary: #62deaf;
+  --color-secondary-light: #b1efd7;
+  --color-secondary-dark: #459b7a;
   --color-neutral-beige: #f2f2f2;
   --color-white: #f2f2f2;
   --color-black: #424240;
