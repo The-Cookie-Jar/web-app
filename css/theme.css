@@ -1,0 +1,19 @@
+:root {
+  --color-primary: #ffbd6f;
+  --color-primary-light: #ffd7a9;
+  --color-primary-dark: #cc9759;
+  --color-secondary: #62deaf;
+  --color-secondary-light: #b1efd7;
+  --color-secondary-dark: #459b7a;
+  --color-neutral-beige: #f2f2f2;
+  --color-white: #f2f2f2;
+  --color-black: #424240;
+  --color-dark-gray: #8F918E;
+
+  --font-primary: "Roboto", Arial, sans-serif;
+  --font-secondary: "Bitter", Georgia, serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
