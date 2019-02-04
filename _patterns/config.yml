@@ -1,0 +1,33 @@
+title: "Buttons"
+description: |
+  The buttons use our primary colour to draw attention and stand out. Each button has a specific purpose:
+patterns:
+
+  basic:  basic.html
+    title: "Basic"
+    description: |
+      Basic button to be used accross the different mediums when a regular button is needed
+  ghost:  ghost.html
+    title: "Ghost"
+    description: |
+      The Ghost button is to be used for navigation bar
+  accent:  accent.html
+    title: "Accent"
+    description: |
+      Accent buttons are to be used as save buttons
+  accent-ghost:  accent-ghost.html
+    title: "Ghost"
+    description: |
+      Accent Ghost are to be used as a contrast against the basic button. It is to be used as a secondary alternative action button.
+
+title: "Cards"
+description: |
+
+patterns:
+  # The key is the same as the HTML file’s name
+  basic:
+    title: ""
+    description: |
+
+  ghost:
+    title: ""
