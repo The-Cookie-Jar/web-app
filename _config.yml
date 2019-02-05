@@ -2,4 +2,26 @@ permalink: pretty
 theme: jekyll_patternbot
 
 patternbot:
+  title: "Eat in"
+  description: |
+    A web app designed to help millenials to save money whilst learning how to cook and eat healthy in the comfort of their own home. The food is not going to cook itself, someone's got to, Chop Chop.
   font-url: "https://fonts.google.com/?selection.family=Bitter:400,700|Roboto:400,700&query=bitter"
+  colors:
+    background: "--color-neutral-beige"
+    accent: "--color-primary"
+    patterns:
+      brand.logos: "--color-white"
+      brand.colours: "--color-white"
+      brand.typefaces: "--color-white"
+      utilities.layout: "--color-white"
+      utilities.icons: "--color-white"
+
+  rationales:
+    typefaces.primary: |
+      Roboto was selected becayse it's a classic and simple sans-serif font. It is great to use on screen and ideal for reading.
+    typefaces.secondary: |
+      Bitter is only used for primary headings and highlighting important text.
+
+  layout:
+    default: |
+      To be used for every page, it contains the masthead and the footer
