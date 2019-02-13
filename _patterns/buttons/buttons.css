@@ -5,6 +5,10 @@
   padding: .275em 4em;
   border-radius: 20px;
   text-transform: uppercase;
+  transition: all 3 00ms linear;
+  -webkit-transition: all 3 00ms linear;
+  -moz-transition: all 3 00ms linear;
+
 }
 
 .btn:hover {
@@ -20,18 +24,24 @@
   padding: .275em 4em;
   border-radius: 20px;
   text-transform: uppercase;
+  transition: all 3 00ms linear;
+  -webkit-transition: all 3 00ms linear;
+  -moz-transition: all 3 00ms linear;
 }
 
 .btn-ghost:hover {
   background-color: transparent;
   border-color: var(--color-secondary-dark);
-  color: var(--color-white);
+  color: var(--color-secondary-dark);
 }
 
 .btn-accent {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
   color: var(--color-white);
+  transition: all 3 00ms linear;
+  -webkit-transition: all 3 00ms linear;
+  -moz-transition: all 3 00ms linear;
 }
 
 .btn-accent:hover {
@@ -44,6 +54,9 @@
   background-color: transparent;
   border-color: var(--color-primary);
   color: var(--color-primary);
+  transition: all 3 00ms linear;
+  -webkit-transition: all 3 00ms linear;
+  -moz-transition: all 3 00ms linear;
 }
 
 .btn-accent-ghost:hover {

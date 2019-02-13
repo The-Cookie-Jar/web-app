@@ -1,0 +1,101 @@
+header {
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo svg {
+  fill: var(--color-primary);
+}
+
+header nav {
+  margin-bottom: auto;
+}
+
+.nav-btn {
+  color: var(--color-black);
+}
+
+.profile-container {
+  width: 60px;
+}
+
+.nav-btn.current {
+  color: var(--color-secondary);
+}
+
+.nav-btn:hover {
+  color: var(--color-primary);
+}
+
+.nav-des {
+  display: none;
+}
+
+/* toggle */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#one,
+#two,
+#three {
+  text-align: center;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-black);
+  border-radius: 15px;
+  margin: .5em 0;
+  transition: all 200ms linear;
+}
+
+.toggle #one {
+  transform: rotate(-45deg) translate(-6px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  -moz-transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.toggle #two {
+  opacity: 0;
+}
+
+.toggle #three {
+  transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  -moz-transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+.toggle #one,
+.toggle #two,
+.toggle #three {
+  text-align: center;
+  width: 30px;
+  height: 2px;
+}
+
+.toggle header {
+  background-color: var(--color-secondary-dark);
+}
+
+
+@media only screen and (min-width: 38em) {
+
+  header {
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nav-des {
+    display: block;
+  }
+  .profile-container {
+    width: 100px;
+  }
+}

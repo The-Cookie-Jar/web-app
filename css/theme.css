@@ -51,10 +51,6 @@ h6 {
   color: var(--color-primary);
 }
 
-em {
-
-  }
-
 del,
 s {
   color: var(--color-secondary);
@@ -78,14 +74,14 @@ mark {
   font-style: italic;
 }
 
-q {
-
-}
-
-
 a {
   text-decoration: none;
   color: var(--color-primary);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-primary-light);
 }
 
 dl dt {
@@ -95,4 +91,12 @@ dl dt {
 
 dl dd {
   color: var(--color-dark-grey);
+}
+
+.grey-bg {
+  background-color: var(--color-dark-gray);
+}
+
+.neutral-bg {
+  background-color: var(--color-neutral-beige);
 }
