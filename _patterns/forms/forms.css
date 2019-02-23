@@ -1,0 +1,133 @@
+.flag-optional {
+  color: var(--color-secondary-dark);
+}
+
+input {
+  var(--color-primary-light);
+  background-color: none;
+}
+
+input:invalid,
+input[type="checkbox"]:invalid + label::before {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: var(--color-dark-gray);
+}
+
+#time {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.array {
+  background-color: var(--color-neutral-beige);
+}
+
+.error-message {
+  display: none;
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+.error-message-highlighted {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.error-message:first-child,
+input:invalid + .error-message,
+input:invalid + label + .error-message {
+  display: block;
+}
+
+
+/* -- ratings -- */
+
+.rating input[type="radio"] ~ label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  border: 2px solid var(--color-primary);
+}
+
+#rating-one[type="radio"]:checked ~ [for="rating-one"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-two[type="radio"]:checked ~ [for="rating-one"],
+#rating-two[type="radio"]:checked ~ [for="rating-two"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-three[type="radio"]:checked ~ [for="rating-one"],
+#rating-three[type="radio"]:checked ~ [for="rating-two"],
+#rating-three[type="radio"]:checked ~ [for="rating-three"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-four[type="radio"]:checked ~ [for="rating-one"],
+#rating-four[type="radio"]:checked ~ [for="rating-two"],
+#rating-four[type="radio"]:checked ~ [for="rating-three"],
+#rating-four[type="radio"]:checked ~ [for="rating-four"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-five[type="radio"]:checked ~ [for="rating-one"],
+#rating-five[type="radio"]:checked ~ [for="rating-two"],
+#rating-five[type="radio"]:checked ~ [for="rating-three"],
+#rating-five[type="radio"]:checked ~ [for="rating-four"],
+#rating-five[type="radio"]:checked ~ [for="rating-five"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-one[type="radio"]:hover ~ [for="rating-one"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-two[type="radio"]:hover ~ [for="rating-one"],
+#rating-two[type="radio"]:hover ~ [for="rating-two"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-three[type="radio"]:hover ~ [for="rating-one"],
+#rating-three[type="radio"]:hover ~ [for="rating-two"],
+#rating-three[type="radio"]:hover ~ [for="rating-three"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-four[type="radio"]:hover ~ [for="rating-one"],
+#rating-four[type="radio"]:hover ~ [for="rating-two"],
+#rating-four[type="radio"]:hover ~ [for="rating-three"],
+#rating-four[type="radio"]:hover ~ [for="rating-four"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+#rating-five[type="radio"]:hover ~ [for="rating-one"],
+#rating-five[type="radio"]:hover ~ [for="rating-two"],
+#rating-five[type="radio"]:hover ~ [for="rating-three"],
+#rating-five[type="radio"]:hover ~ [for="rating-four"],
+#rating-five[type="radio"]:hover ~ [for="rating-five"] {
+  background-color: var(--color-primary);
+  background-image: none;
+}
+
+/* -- end ratings -- */
+
+/* checkbox */
+
+[type="radio"]:checked + label::before {
+  border-color: var(--color-secondary);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Ccircle fill='%2362deaf' cx='128' cy='128' r='70.4'/%3E%3C/svg%3E");
+}
