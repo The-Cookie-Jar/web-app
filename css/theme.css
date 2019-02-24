@@ -86,11 +86,15 @@ a:hover {
 
 dl dt {
   color: var(--color-black);
+  font-size: .8232rem;
+  line-height: 1.3rem;
 }
 
 
 dl dd {
-  color: var(--color-dark-grey);
+  color: var(--color-light-gray);
+  font-size: .8232rem;
+  line-height: 1.3rem;
 }
 
 .grey-bg {
@@ -99,4 +103,12 @@ dl dd {
 
 .neutral-bg {
   background-color: var(--color-neutral-beige);
+}
+
+.slab {
+  --font-secondary: "Bitter", Georgia, serif;
+}
+
+.subtle-text {
+  color: var(--color-dark-gray);
 }
