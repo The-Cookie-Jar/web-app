@@ -77,6 +77,8 @@ mark {
 a {
   text-decoration: none;
   color: var(--color-primary);
+  font-size: .8232rem;
+  line-height: 1.3rem;
 }
 
 a:hover {
@@ -95,6 +97,10 @@ dl dd {
   color: var(--color-dark-grey);
   font-size: .8232rem;
   line-height: 1.3rem;
+}
+
+.gray-text {
+  color: var(--color-dark-gray);
 }
 
 .grey-bg {
