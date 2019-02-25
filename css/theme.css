@@ -92,7 +92,7 @@ dl dt {
 
 
 dl dd {
-  color: var(--color-dark-grey);
+  color: var(--color-light-gray);
   font-size: .8232rem;
   line-height: 1.3rem;
 }
@@ -107,4 +107,12 @@ dl dd {
 
 .upper {
   text-transform: uppercase;
+}
+
+.slab {
+  --font-secondary: "Bitter", Georgia, serif;
+}
+
+.subtle-text {
+  color: var(--color-dark-gray);
 }
