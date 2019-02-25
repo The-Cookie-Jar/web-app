@@ -47,9 +47,9 @@ input:invalid + label + .error-message {
 
 .rating input[type="radio"] ~ label {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
   border: 2px solid var(--color-primary);
 }
 
@@ -127,7 +127,14 @@ input:invalid + label + .error-message {
 
 /* checkbox */
 
-[type="radio"]:checked + label::before {
+[type="checkbox"] + label::before  {
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  border-color: var(--color-dark-gray);
+}
+
+[type="checkbox"]:checked + label::before {
   border-color: var(--color-secondary);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Ccircle fill='%2362deaf' cx='128' cy='128' r='70.4'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='none' stroke='%2362deaf' stroke-miterlimit='10' stroke-width='50' d='M49.9 130.1l50.8 50.7L206.1 75.2'/%3E%3C/svg%3E");
 }
