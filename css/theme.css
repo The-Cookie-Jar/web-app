@@ -9,7 +9,7 @@
   --color-white: #fff;
   --color-black: #424240;
   --color-dark-gray: #8F918E;
-  --color-light-gray: #a1a0a1;
+  --color-light-gray: #e3e3e3;
 
   --font-primary: "Roboto", Arial, sans-serif;
   --font-secondary: "Bitter", Georgia, serif;
@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-  color: var(--color-primary);
+  color: var(--color-dark-gray);
   font-weight: 300;
   font-family: var(--font-secondary);
 }
@@ -103,6 +103,10 @@ dl dd {
 
 .neutral-bg {
   background-color: var(--color-neutral-beige);
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 .slab {

@@ -1,20 +1,31 @@
-<div class="receipe-card">
+<div class="receipe-card gutter">
   <div class="receipe-img">
-    <img src="/images/french-toast.jpg" alt="">
+    <img class="img-flex" src="/images/french-toast.jpg" alt="">
   </div>
-  <div>
-    <div class="">
-
+  <div class="pad-t">
+    <div>
+      {% pattern forms/reviews %}
     </div>
-    <dl class="list-group-inline">
-      <dt>Prep Time:</dt>
-      <dd class="push-0">5 Minutes</dd>
-      <dt>Cook Time:</dt>
-      <dd class="push-0">5 Minutes</dd>
-      <dt>Total Time:</dt>
-      <dd class="push-0">5 Minutes</dd>
-      <dt>Servings:</dt>
-      <dd class="push-0">5 Minutes</dd>
+    <dl class="list-group-inline grid pad-t-1-4">
+      <span class="unit [ xs-1 s-1-2 m-1-2 l-1-2 x-1-2 ] ">
+        <dt class="inline">Prep Time:</dt>
+        <dd class="push-0 inline">5 Minutes</dd>
+      </span>
+      <span class="unit [ xs-1 s-1-2 m-1-2 l-1-2 x-1-2 ] ">
+
+        <dt class="inline">Cook Time:</dt>
+        <dd class="push-0 inline">5 Minutes</dd>
+      </span>
+      <span class="unit [ xs-1 s-1-2 m-1-2 l-1-2 x-1-2 ] ">
+        <dt class="inline">Total Time:</dt>
+        <dd class="push-0 inline">5 Minutes</dd>
+      </span>
+      <span class="unit [ xs-1 s-1-2 m-1-2 l-1-2 x-1-2 ] ">
+
+        <dt class="inline">Servings:</dt>
+        <dd class="push-0 inline">5 Minutes</dd>
+      </span>
+
     </dl>
   </div>
 </div>
