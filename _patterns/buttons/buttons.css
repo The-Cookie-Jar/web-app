@@ -77,30 +77,22 @@
   -moz-transition: all 3 00ms linear;
 }
 
-.misson-btn:hover {
-  background-color: var(--color-secondary-dark);
-  border-color: var(--color-secondary-dark);
+#mission-check:checked ~ .mission-btn {
+  background-color: var(--color-dark-gray);
+  border-color: var(--color-dark-gray);
   color: var(--color-white);
 }
 
-#start-mission {
-  position: relative;
-}
-#start-mission-check {
+.mission-abort {
   display: none;
 }
 
-#start-mission-check:checked + #start-mission:after {
-  content: "AbortMission";
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: var(--color-black);
+#mission-check:checked ~ .mission-btn .mission-abort {
+  display: inline;
 }
 
-#start-mission-check:checked + #start-mission:after ~ .mission-btn {
-  background-color: var(--color-black);
-  border-color: var(--color-black);
+#mission-check:checked ~ .mission-btn .mission-start {
+  display: none;
 }
 
 /* remove btn */
@@ -117,7 +109,7 @@ div.remove-container {
 #btn-r-1,
 #btn-r-2 {
   text-align: center;
-  width: 8px;
+  width: 12px;
   height: 1px;
   background-color: var(--color-black);
   border-radius: 15px;
@@ -126,13 +118,13 @@ div.remove-container {
 
 #btn-r-1 {
   transform: translate(-50%, -50%);
-  transform: rotate(-45deg) translate(-3px, 6px);
-  -webkit-transform: rotate(-45deg) translate(-3px, 6px);
-  -moz-transform: rotate(-45deg) translate(-3px, 6px);
+  transform: rotate(-45deg) translate(-4px, 7px);
+  -webkit-transform: rotate(-45deg) translate(-4px, 7px);
+  -moz-transform: rotate(-45deg) translate(-4px, 7px);
 }
 
 #btn-r-2 {
-  transform: rotate(45deg) translate(6px, 2px);
-  -webkit-transform: rotate(45deg) translate(6px, 2px);
-  -moz-transform: rotate(45deg) translate(6px, 2px);
+  transform: rotate(45deg) translate(6px, 3px);
+  -webkit-transform: rotate(45deg) translate(6px, 3px);
+  -moz-transform: rotate(45deg) translate(6px, 3px);
 }
