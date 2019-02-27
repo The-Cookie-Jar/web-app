@@ -1,4 +1,13 @@
 ---
+name: French Toast
+type: vegan(/normal/gluten-free)
+mealTime: Breakfast(/Lunch/Dinner/Dessert)
+image: /images/french-toast.jpg
+prepTime: 5 minutes
+cookTime: 5 minutes
+totalTime: 10 minutes
+servings: 2 servings
+failureRate: "10% Failure Rate"
 ingredients:
   - 2 tbsp Chickpea flour
   - 1 tsp Ground cinnamon
