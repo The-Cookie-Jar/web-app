@@ -1,10 +1,11 @@
-<header class="neutral-bg island text-center">
-  <div class="hamburger island" onclick="myFunction(this)">
-    <div id="one"></div>
-    <div id="two"></div>
-    <div id="three"></div>
-  </div>
-  <div class=" push">
+<input type="checkbox" id="hamburger" class="hide-custom-input">
+<label class="hamburger island" for="hamburger">
+  <div id="one"></div>
+  <div id="two"></div>
+  <div id="three"></div>
+</label>
+<header class="neutral-bg gutter text-center pad-t-2 pad-b nav-bar">
+  <div class=" push pad-t-2">
     <i class="icon i-48 logo">
       <svg><use xlink:href="/images/icons.svg#logo"></use></svg>
     </i>
@@ -36,10 +37,3 @@
   </a>
 
 </header>
-
-
-<script>
-  function myFunction(x) {
-  x.classList.toggle("toggle");
-}
-</script>

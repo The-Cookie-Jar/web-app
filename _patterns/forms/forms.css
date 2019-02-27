@@ -47,36 +47,28 @@ input:invalid + label + .error-message {
 
 .rating input[type="radio"] ~ label {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 25px;
-  border: 2px solid var(--color-primary);
 }
 
 #rating-one[type="radio"]:checked ~ [for="rating-one"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
 }
 
 #rating-two[type="radio"]:checked ~ [for="rating-one"],
 #rating-two[type="radio"]:checked ~ [for="rating-two"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
 }
 
 #rating-three[type="radio"]:checked ~ [for="rating-one"],
 #rating-three[type="radio"]:checked ~ [for="rating-two"],
 #rating-three[type="radio"]:checked ~ [for="rating-three"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
 }
 
 #rating-four[type="radio"]:checked ~ [for="rating-one"],
 #rating-four[type="radio"]:checked ~ [for="rating-two"],
 #rating-four[type="radio"]:checked ~ [for="rating-three"],
 #rating-four[type="radio"]:checked ~ [for="rating-four"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
 }
 
 #rating-five[type="radio"]:checked ~ [for="rating-one"],
@@ -84,34 +76,31 @@ input:invalid + label + .error-message {
 #rating-five[type="radio"]:checked ~ [for="rating-three"],
 #rating-five[type="radio"]:checked ~ [for="rating-four"],
 #rating-five[type="radio"]:checked ~ [for="rating-five"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
 }
 
 #rating-one[type="radio"]:hover ~ [for="rating-one"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
+  fill: var(--color-black);
 }
 
 #rating-two[type="radio"]:hover ~ [for="rating-one"],
 #rating-two[type="radio"]:hover ~ [for="rating-two"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
+  fill: var(--color-black);
 }
 
 #rating-three[type="radio"]:hover ~ [for="rating-one"],
 #rating-three[type="radio"]:hover ~ [for="rating-two"],
 #rating-three[type="radio"]:hover ~ [for="rating-three"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
 }
 
 #rating-four[type="radio"]:hover ~ [for="rating-one"],
 #rating-four[type="radio"]:hover ~ [for="rating-two"],
 #rating-four[type="radio"]:hover ~ [for="rating-three"],
 #rating-four[type="radio"]:hover ~ [for="rating-four"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
 }
 
 #rating-five[type="radio"]:hover ~ [for="rating-one"],
@@ -119,8 +108,7 @@ input:invalid + label + .error-message {
 #rating-five[type="radio"]:hover ~ [for="rating-three"],
 #rating-five[type="radio"]:hover ~ [for="rating-four"],
 #rating-five[type="radio"]:hover ~ [for="rating-five"] {
-  background-color: var(--color-primary);
-  background-image: none;
+  color: var(--color-primary);
 }
 
 /* -- end ratings -- */
@@ -131,7 +119,7 @@ input:invalid + label + .error-message {
   width: 20px;
   height: 20px;
   border-radius: 25px;
-  border-color: var(--color-dark-gray);
+  border-color: var(--color-light-gray);
 }
 
 [type="checkbox"]:checked + label::before {

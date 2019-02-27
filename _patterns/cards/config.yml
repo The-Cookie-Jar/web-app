@@ -1,0 +1,8 @@
+patterns:
+  ingredient-list:
+    fields:
+      - name: ingredients
+        type: "object"
+        data:
+          source: "site.recipes[0].ingredients"
+          type: recipe-ingredient

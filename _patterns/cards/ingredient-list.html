@@ -8,14 +8,9 @@
     </div>
     <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] ">
       <ul class="list-group push-0">
-        <li>2 tbsp Chickpea flour</li>
-        <li>1 tsp Ground cinnamon</li>
-        <li>1/2 tsp mixed spice or pumpkin pie spice mix</li>
-        <li>120 ml dairy-free milk</li>
-        <li>1 tbs vanilla extract</li>
-        <li>A pinch of salt</li>
-        <li>1 tbsp vegan butter oe mild-flavoured oil</li>
-        <li>4 thick slices of soft bread (white or wholegrain)</li>
+        {% for ing in include.ingredients %}
+          <li>{{ing}}</li>
+        {% endfor %}
       </ul>
     </div>
 

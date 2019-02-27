@@ -1,16 +1,18 @@
-header {
+.nav-bar {
   height: 100vh;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  left: -8em;
+  width: 8em;
 }
 
 .logo svg {
   fill: var(--color-primary);
 }
 
-header nav {
+.nav-bar nav {
   margin-bottom: auto;
 }
 
@@ -20,6 +22,7 @@ header nav {
 
 .profile-container {
   width: 60px;
+  border-radius: 500px;
 }
 
 .nav-btn.current {
@@ -36,8 +39,11 @@ header nav {
 
 /* toggle */
 .hamburger {
+  position: fixed;
   display: inline-block;
   cursor: pointer;
+  z-index: 4;
+  left: 2em;
 }
 
 #one,
@@ -52,44 +58,40 @@ header nav {
   transition: all 200ms linear;
 }
 
-.toggle #one {
+#hamburger:checked ~ .hamburger #one {
   transform: rotate(-45deg) translate(-6px, 6px);
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
   -moz-transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.toggle #two {
+#hamburger:checked ~ .hamburger #two {
   opacity: 0;
 }
 
-.toggle #three {
+#hamburger:checked ~ .hamburger #three {
   transform: rotate(45deg) translate(-8px, -8px);
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   -moz-transform: rotate(45deg) translate(-8px, -8px);
 }
 
 
-.toggle #one,
-.toggle #two,
-.toggle #three {
+#hamburger:checked ~ .hamburger #one,
+#hamburger:checked ~ .hamburger #two,
+#hamburger:checked ~ .hamburger #three {
   text-align: center;
   width: 30px;
   height: 2px;
 }
 
-.toggle header {
-  background-color: var(--color-secondary-dark);
+#hamburger:checked ~ .nav-bar {
+  left: 0;
 }
 
 
 @media only screen and (min-width: 38em) {
 
-  header {
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .nav-bar {
+    left: 0;
   }
 
   .nav-des {
@@ -97,5 +99,16 @@ header nav {
   }
   .profile-container {
     width: 100px;
+  }
+
+  .hamburger {
+    position: fixed;
+    display: none;
+  }
+
+  #one,
+  #two,
+  #three {
+  display: none;
   }
 }

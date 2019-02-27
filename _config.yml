@@ -25,3 +25,7 @@ patternbot:
   layout:
     default: |
       To be used for every page, it contains the masthead and the footer
+
+collections:
+  recipes:
+    output: true
