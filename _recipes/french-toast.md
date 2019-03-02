@@ -1,21 +1,22 @@
 ---
 name: French Toast
-type: vegan(/normal/gluten-free)
-mealTime: Breakfast(/Lunch/Dinner/Dessert)
+type: vegan
+mealTime: Breakfast
 image: /images/french-toast.jpg
+stars: 4 stars
 prepTime: 5 minutes
 cookTime: 5 minutes
 totalTime: 10 minutes
 servings: 2 servings
-failureRate: "10% Failure Rate"
+failureRate: "90% Success Rate"
 ingredients:
-  - 2 tbsp Chickpea flour
-  - 1 tsp Ground cinnamon
+  - 2 tbsp chickpea flour
+  - 1 tsp ground cinnamon
   - 1/2 tsp mixed spice or pumpkin pie spice mix
   - 120 ml dairy-free milk
   - 1 tbs vanilla extract
   - A pinch of salt
-  - 1 tbsp vegan butter oe mild-flavoured oil
+  - 1 tbsp vegan butter or mild-flavoured oil
   - 4 thick slices of soft bread (white or wholegrain)
 steps:
   - Whisk the chickpea flour, spices, milk, vanilla and salt together in a shallow container.
