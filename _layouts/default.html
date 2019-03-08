@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Eat in {% if page.title %} {{page.title}}{% endif %}</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link href="/css/main.css" rel="stylesheet">
+</head>
+<body>
+  {% pattern nav/nav  %}
+  <main class="gutter">
+    {{content}}
+
+  </main>
+</body>
+</html>

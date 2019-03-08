@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+
+{% pattern header/header
+  introText="Here's your"
+  recipe=page
+  subText="I can hear your fire alarm cheering you on from here" %}
+<section class="pad-t-2">
+  <div class="grid pad-t">
+    <div class="unit [ xs-1 s-1 m-1 l-1-2 xl-1-2 ] ">
+      {% pattern cards/receipe-card recipe=page %}
+    </div>
+    <div class="unit [ xs-1 s-1 m-1 l-1-2 xl-1-2 ] gutter">
+      <div class="push-2">
+        {% pattern cards/ingredient-list ingredients=page.ingredients %}
+
+      </div>
+      <div>
+        {% pattern buttons/mission-btn %}
+        {% pattern cards/steps-card steps=page.steps%}
+
+      </div>
+      {% pattern buttons/ghost btnText="Mission Accomplished" href="" %}
+    </div>
+
+  </div>
+</section>
