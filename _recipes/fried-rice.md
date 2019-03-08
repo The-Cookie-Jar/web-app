@@ -1,9 +1,10 @@
 ---
-name: Fried Rice
+layout: recipe
+title: Fried Rice
 type: vegan
 mealTime: Dinner
 image: /images/fried-rice.jpg
-stars: 5 stars
+stars: 5
 prepTime: 15 minutes
 cookTime: 60 minutes
 totalTime: 75 minutes

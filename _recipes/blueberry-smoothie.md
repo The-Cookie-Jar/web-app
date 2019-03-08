@@ -1,9 +1,10 @@
 ---
-name: Blueberry Smoothie
+layout: recipe
+title: Blueberry Smoothie
 type: vegan
 mealTime: Breakfast
 image: /images/blueberry-smoothie.jpg
-stars: 5 stars
+stars: 5
 prepTime: 5 minutes
 cookTime: 1 minute
 totalTime: 6 minutes

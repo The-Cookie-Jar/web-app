@@ -1,9 +1,10 @@
 ---
-name: Pumpkin Bread
+layout: recipe
+title: Pumpkin Bread
 type: vegan
 mealTime: Dessert
 image: /images/pumpkin-bread.jpg
-stars: 5 stars
+stars: 5
 prepTime: 15 minutes
 cookTime: 60 minute
 totalTime: 75 minutes

@@ -1,9 +1,10 @@
 ---
-name: Blueberry Scones
+layout: recipe
+title: Blueberry Scones
 type: vegan
 mealTime: Breakfast
 image: /images/blueberry-scones.jpg
-stars: 4 stars
+stars: 4
 prepTime: 15 minutes
 cookTime: 25 minutes
 totalTime: 40 minutes

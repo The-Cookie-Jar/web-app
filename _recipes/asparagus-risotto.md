@@ -1,9 +1,10 @@
 ---
-name: Asparagus Risotto
+layout: recipe
+title: Asparagus Risotto
 type: vegan
 mealTime: Dinner
 image: /images/asparagus-risotto.jpg
-stars: 4 stars
+stars: 4
 prepTime: 10 minutes
 cookTime: 20 minutes
 totalTime: 30 minutes

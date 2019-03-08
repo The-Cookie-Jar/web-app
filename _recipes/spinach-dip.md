@@ -1,9 +1,10 @@
 ---
-name: Spinach Dip
+layout: recipe
+title: Spinach Dip
 type: vegan
 mealTime: Lunch
 image: /images/spinach-dip.jpg
-stars: 4 stars
+stars: 4
 prepTime: 120 minutes
 cookTime: 30 minute
 totalTime: 150 minutes

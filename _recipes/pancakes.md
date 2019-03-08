@@ -1,9 +1,10 @@
 ---
-name: Pancakes
+layout: recipe
+title: Pancakes
 type: vegan
 mealTime: Breakfast
 image: /images/pancakes.jpg
-stars: 5 stars
+stars: 5
 prepTime: 15 minutes
 cookTime: 20 minutes
 totalTime: 35 minutes

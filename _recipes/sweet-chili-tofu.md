@@ -1,9 +1,10 @@
 ---
-name: Sweet Chili Tofu
+layout: recipe
+title: Sweet Chili Tofu
 type: vegan
 mealTime: Dinner
 image: /images/sweet-chili-tofu.jpg
-stars: 4 stars
+stars: 4
 prepTime: 20 minutes
 cookTime: 20 minutes
 totalTime: 40 minutes

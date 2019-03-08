@@ -1,9 +1,10 @@
 ---
-name: Chipotle Pasta
+layout: recipe
+title: Chipotle Pasta
 type: vegan
 mealTime: Lunch
 image: /images/chipotle-pasta.jpg
-stars: 5 stars
+stars: 5
 prepTime: 10 minutes
 cookTime: 13 minute
 totalTime: 23 minutes

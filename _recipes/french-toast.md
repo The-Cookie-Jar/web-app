@@ -1,9 +1,10 @@
 ---
-name: French Toast
+layout: recipe
+title: French Toast
 type: vegan
 mealTime: Breakfast
 image: /images/french-toast.jpg
-stars: 4 stars
+stars: 4
 prepTime: 5 minutes
 cookTime: 5 minutes
 totalTime: 10 minutes

@@ -1,9 +1,10 @@
 ---
-name: Breakfast Loaf
+layout: recipe
+title: Breakfast Loaf
 type: vegan
 mealTime: Breakfast
 image: /images/breakfast-loaf.jpg
-stars: 4 stars
+stars: 4
 prepTime: 10 minutes
 cookTime: 45 minutes
 totalTime: 55 minutes

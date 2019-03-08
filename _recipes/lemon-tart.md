@@ -1,9 +1,10 @@
 ---
-name: Lemon Tart
+layout: recipe
+title: Lemon Tart
 type: vegan
 mealTime: Dessert
 image: /images/lemon-tart.jpg
-stars: 5 stars
+stars: 5
 prepTime: 120 minutes
 cookTime: 20 minutes
 totalTime: 140 minutes

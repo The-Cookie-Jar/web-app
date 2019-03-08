@@ -1,9 +1,10 @@
 ---
-name: Blueberry Muffins
+layout: recipe
+title: Blueberry Muffins
 type: vegan
 mealTime: Breakfast
 image: /images/blueberry-muffins.jpg
-stars: 5 stars
+stars: 5
 prepTime: 10 minutes
 cookTime: 20 minutes
 totalTime: 30 minutes

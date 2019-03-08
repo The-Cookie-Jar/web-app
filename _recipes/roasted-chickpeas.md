@@ -1,9 +1,10 @@
 ---
-name: Roasted Chickpeas
+layout: recipe
+title: Roasted Chickpeas
 type: vegan
 mealTime: Snacks
 image: /images/roasted-chickpeas.jpg
-stars: 4 stars
+stars: 4
 prepTime: 10 minutes
 cookTime: 30 minutes
 totalTime: 40 minutes
