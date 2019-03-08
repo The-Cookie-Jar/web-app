@@ -1,9 +1,10 @@
 ---
-name: BBQ Tofu Wrap
+layout: recipe
+title: BBQ Tofu Wrap
 type: vegan
 mealTime: Lunch
 image: /images/bbq-tofu-wrap.jpg
-stars: 4 stars
+stars: 4
 prepTime: 10 minutes
 cookTime: 10 minutes
 totalTime: 20 minutes

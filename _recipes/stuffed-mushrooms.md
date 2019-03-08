@@ -1,9 +1,10 @@
 ---
-name: Stuffed Mushrooms
+layout: recipe
+title: Stuffed Mushrooms
 type: vegan
 mealTime: Snacks
 image: /images/stuffed-mushrooms.jpg
-stars: 4 stars
+stars: 4
 prepTime: 10 minutes
 cookTime: 20 minutes
 totalTime: 30 minutes

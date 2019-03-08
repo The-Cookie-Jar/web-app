@@ -1,9 +1,10 @@
 ---
-name: California Burger
+layout: recipe
+title: California Burger
 type: vegan
 mealTime: Dinner
 image: /images/california-burger.jpg
-stars: 4 stars
+stars: 4
 prepTime: 20 minutes
 cookTime: 60 minutes
 totalTime: 80 minutes

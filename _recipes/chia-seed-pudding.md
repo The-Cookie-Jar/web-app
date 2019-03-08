@@ -1,9 +1,10 @@
 ---
-name: Chia Seed Pudding
+layout: recipe
+title: Chia Seed Pudding
 type: vegan
 mealTime: Breakfast
 image: /images/chia-seed-pudding.jpg
-stars: 5 stars
+stars: 5
 prepTime: 15 minutes
 cookTime: 25 minutes
 totalTime: 15 minutes

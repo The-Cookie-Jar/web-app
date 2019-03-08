@@ -1,9 +1,10 @@
 ---
-name: Lemon Rosmary Muffins
+layout: recipe
+title: Lemon Rosmary Muffins
 type: vegan
 mealTime: Snacks
 image: /images/lemon-rosmary-muffins.jpg
-stars: 5 stars
+stars: 5
 prepTime: 15 minutes
 cookTime: 15 minute
 totalTime: 30 minutes

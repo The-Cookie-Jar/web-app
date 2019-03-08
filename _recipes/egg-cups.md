@@ -1,9 +1,10 @@
 ---
-name: Egg Cups
+layout: recipe
+title: Egg Cups
 type: vegan
 mealTime: Breakfast
 image: /images/egg-cups.jpg
-stars: 4 stars
+stars: 4
 prepTime: 10 minutes
 cookTime: 30 minutes
 totalTime: 40 minutes

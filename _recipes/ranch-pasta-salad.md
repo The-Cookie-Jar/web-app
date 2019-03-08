@@ -1,9 +1,10 @@
 ---
-name: Ranch Pasta Salad
+layout: recipe
+title: Ranch Pasta Salad
 type: vegan
 mealTime: Lunch
 image: /images/ranch-pasta-salad.jpg
-stars: 5 stars
+stars: 5
 prepTime: 5 minutes
 cookTime: 15 minutes
 totalTime: 20 minutes
