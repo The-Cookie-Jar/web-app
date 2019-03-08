@@ -5,7 +5,7 @@
   --color-secondary: #62deaf;
   --color-secondary-light: #b1efd7;
   --color-secondary-dark: #459b7a;
-  --color-neutral-beige: #fafafa;
+  --color-neutral-beige: #f3f3f3;
   --color-white: #fff;
   --color-black: #424240;
   --color-dark-gray: #8F918E;
@@ -94,16 +94,20 @@ dl dt {
 
 
 dl dd {
-  color: var(--color-light-gray);
+  color: var(--color-dark-gray);
   font-size: .8232rem;
   line-height: 1.3rem;
+}
+
+.black-text {
+  color: var(--color-black);
 }
 
 .gray-text {
   color: var(--color-dark-gray);
 }
 
-.grey-bg {
+.gray-bg {
   background-color: var(--color-dark-gray);
 }
 
@@ -116,7 +120,11 @@ dl dd {
 }
 
 .slab {
-  --font-secondary: "Bitter", Georgia, serif;
+  font-family: var(--font-secondary);
+}
+
+.sans {
+  font-family: var(--font-primary);
 }
 
 .subtle-text {
