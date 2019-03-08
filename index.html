@@ -1,19 +1,28 @@
 ---
+layout: default
+title: Homepage
+meta: App designed to teach you how to eat in
 
 ---
+  <section class="load-screen relative">
+    <div class="log-in text-center island-2 width absolute pin-c">
+      <h1 class="sans push">
+        <i class="icon i-96"><svg><use xlink:href="/images/icons.svg#logo"></use></svg></i>
+        <span class="block mega black-text">Eat in</span>
+      </h1>
 
-<!DOCTYPE html>
-<html lang="en-ca">
-<head>
-  <meta charset="utf-8">
-  <title>Web app</title>
-  <link rel="shortcut icon" href="favicon.ico"/>
-  <link href="/css/main.css" rel="stylesheet">
-</head>
-<body>
-{% pattern buttons/mission-btn %}
-{% pattern cards/steps-card %}
+      <p class="push mega slab gray-text">I see you're not <br> eating out again</p>
 
-
-</body>
-</html>
+      <form class="" action="index.html" method="POST">
+        <div class="push-1-2">
+          {% pattern forms/text-field fieldClass="round-field" singleLine=""%}
+        </div>
+        <div class="push">
+          {% pattern forms/password fieldClass="round-field" singleLine=""%}
+        </div>
+        <div class="push-0">
+          {% pattern buttons/basic btnText="Login" href="/dashboard/"%}
+        </div>
+      </form>
+    </div>
+  </section>

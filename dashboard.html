@@ -1,0 +1,30 @@
+---
+layout: default
+title: Dashboard
+---
+
+{% pattern header/header
+  introText="Welcome back to the kitchen,"
+  hOne="Hailey Duncan"
+  subText="Lets try not to burn it down today"
+  %}
+
+<div class="pad-t-2">
+  <h2 class="pad-t mega">Today's daily vegan recipe to challenge you, if you got some thyme. </h2>
+  <ul class="grid grid-stretch list-group">
+  {% assign meals = site.recipes | where:'mealTime','Lunch'  | where: 'type', 'vegan' %}
+    {% for recipe in meals %}
+      <li class="unit [ xs-1 s-1-2 m-1-4 l-1-4 ] unit-content-distribute">{% pattern cards/bookmarks id=forloop.index %}</li>
+      <style>
+        #bookmark-{{forloop.index}}[type="checkbox"]:checked ~ [for="bookmark-{{forloop.index}}"] svg {
+          fill: var(--color-dark-gray);
+          stroke: var(--color-black);
+        }
+      </style>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="pad-t-2">
+  <p class="push-0 inline push-r">Not Feeling any of these recipes?</p>{% pattern buttons/build-btn btnText="Build your own" href="/builder/"%}
+</div>

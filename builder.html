@@ -1,0 +1,38 @@
+---
+layout: default
+title: Recipe builder
+---
+
+
+{% pattern header/header
+  introText="Here's your"
+  hOne="Recipe builder"
+  subText="Let's see what you have in your fridge this time" %}
+
+<form class="pad-t-2" action="index.html">
+  <div class="grid max-length-no-center">
+    <div class="unit s-1 l-1 ">
+      <div class="grid grid-middle ">
+        <span class="unit [ xs-1 s-1 m-1-2 l-1-2 ] mega">I am hungry and in the mood for</span>
+        <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] text-center">
+          {% pattern forms/empty-textfield %}
+        </div>
+      </div>
+    </div>
+    <div class="unit s-1 l-1">
+      <div class="grid">
+        <span class="unit [ xs-1 s-1 m-1-4 l-1-2 ] mega">and this is what I have on my fridge</span>
+        <div class="unit [ xs-1 s-1 m-2-3 l-1-2 ] ">
+          {% pattern forms/empty-array
+            ingredient-one="bread"
+            ingredient-two="almond milk"
+            ingredient-three="chickpea flour"%}
+        </div>
+      </div>
+    </div>
+    <div class="unit s-1-2 l-1-2"><!-- empty div for grid--></div>
+    <div class="unit s-1-2 l-1-2 pad-t-2">
+      {% pattern buttons/basic btnText="Build my recipe" href="/recipes/"%}
+    </div>
+  </div>
+</form>

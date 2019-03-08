@@ -1,0 +1,56 @@
+---
+layout: default
+title: Recipe book
+---
+
+
+{% pattern header/header
+  introText="Hailey's vegan,"
+  hOne="Recipe book"
+  subText="Filled with tried and tested recipes"
+  %}
+<div class="grid gutter pad-t-2 pad-b-2">
+  <div class="unit [ xs-1 s-1 m-1 l-1-2 xl-3-4 ] push-2">
+    <h2 class="slab push-1-2 black-text">Breakfast</h2>
+    <ul class="grid list-group">
+      {% for recipe in site.recipes %}
+        {% if recipe.mealTime=='Breakfast' %}
+          <li>{% pattern cards/bookmarks %}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h2 class="pad-t-2 slab push-1-2 black-text">Lunch</h2>
+    <ul class="grid list-group">
+      {% for recipe in site.recipes %}
+        {% if recipe.mealTime=='Lunch' %}
+          <li>{% pattern cards/bookmarks %}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h2 class="pad-t-2 slab push-1-2 black-text">Dinner</h2>
+    <ul class="grid list-group">
+      {% assign dinners = site.recipes | where:'mealTime','Dinner' %}
+        {% for recipe in dinners limit: 3 %}
+          <li>{% pattern cards/bookmarks %}</li>
+        {% endfor %}
+    </ul>
+
+    <h2 class="pad-t-2 slab push-1-2 black-text">Dessert</h2>
+    <ul class="grid list-group">
+      {% for recipe in site.recipes %}
+        <li>{% pattern cards/bookmarks %}</li>
+      {% endfor %}
+    </ul>
+
+  </div>
+  <div class="unit [ xs-1 s-1 m-1 l-1-2 xl-1-4 ] pad-t-1-4">
+    <h3 class="push-0">Recently viewed</h3>
+    <ul class="list-group">
+      {% for recipe in site.recipes %}
+        <li class="island-1-8">{% pattern cards/recently-viewed %}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
