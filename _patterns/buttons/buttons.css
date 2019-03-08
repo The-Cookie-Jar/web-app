@@ -64,6 +64,16 @@
   color: var(--color-primary-dark);
 }
 
+.build-btn {
+  color: var(--color-secondary);
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.build-btn:hover {
+  color: var(--color-secondary-dark);
+  border-bottom: 2px solid var(--color-secondary-dark);
+}
+
 /* clicked button */
 .mission-btn {
   background-color: var(--color-secondary);

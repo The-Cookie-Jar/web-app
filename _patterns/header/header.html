@@ -1,5 +1,5 @@
-<div class="gutter">
-  <span class="block peta normal">Welcome back to the kitchen,</span>
-  <h1 class="push-0 tenamega">Hailey Duncan</h1>
-  <p class="push-0 gray-text milli italic">Lets try not to burn it down today</p>
+<div>
+  <span class="block peta normal">{{include.introText}}</span>
+  <h1 class="push-0 tenamega">{% if include.recipe.title %}{{include.recipe.title}}{% else %}{{include.hOne}}{% endif %}</h1>
+  <p class="push-0 gray-text italic">{{include.subText}}</p>
 </div>

@@ -1,17 +1,17 @@
-<div class="island">
-  <div class="bookmark-container">
-    <div class="bookmark-img">
-      <img class="img-flex" src="/images/french-toast.jpg" alt="">
+<div class="island-1-4 content-fill unit-content-distribute">
+  <a href="{{recipe.url}}" class="bookmark-container link-box content-fill unit-content-distribute">
+    <div class="embed embed-1by1">
+      <img class="embed-item" src="{{recipe.image | default:'/images/bbq-tofu-wrap.jpg'}}" alt="photo of {{recipe.title}}">
     </div>
-    <div class="island book-icon-card grid">
-      <span class="unit [ xs-2-3 s-2-3 m-2-3 l-2-3 l-2-3 ] ">
-        <h2 class="push-0">Stuffed Mushrooms</h2>
-        <p class="push-0 micro">30% Failure rate</p>
-      </span>
-      <div class="unit [ xs-1-3 s-1-3 m-1-3 l-1-3 l-1-3 ] text-right">
-        <i class="gutter icon i-64"><svg><use xlink:href="/images/icons.svg#bookmark"></use></svg></i>
+    <div class="island book-icon-card grid content-fill">
+      <div class="unit [ xs-2-3 s-2-3 m-2-3 l-2-3 l-2-3 ] ">
+        <h2 class="push-0 kilo">{{recipe.title | default:"Recipe Title"}}</h2>
+        <p class="push-0 micro">{{recipe.failureRate| default:"Success rate"}}</p>
       </div>
-
+      <div class="unit [ xs-1-3 s-1-3 m-1-3 l-1-3 l-1-3 ] text-right">
+        <input type="checkbox" id="bookmark-{{include.id}}" name="bookmark">
+        <label class="hide-custom-input" for="bookmark-{{include.id}}"><i class="icon i-32"><svg><use xlink:href="/images/icons.svg#saved-recipes"></use></svg></i></label>
+      </div>
     </div>
-  </div>
+  </a>
 </div>

@@ -5,28 +5,28 @@
   <div id="three"></div>
 </label>
 <header class="neutral-bg gutter text-center pad-t-2 pad-b nav-bar">
-  <div class=" push pad-t-2">
-    <i class="icon i-48 logo">
+  <a href="/index/" class=" push logo-space">
+    <i class="icon i-64 logo">
       <svg><use xlink:href="/images/icons.svg#logo"></use></svg>
     </i>
-    <span class="block mega">Eat in</span>
-  </div>
+    <span class="block mega black-text">Eat in</span>
+  </a>
   <nav>
     <ul class="list-group text-center">
       <li class="pad-t-1-2 pad-b-1-2">
-        <a href="#"><i class="icon i-32 nav-btn current"><svg><use xlink:href="/images/icons.svg#dashboard"></use></svg></i></a>
+        <a href="/dashboard/"><i class="icon i-32 nav-btn {% if page.url contains 'dashboard' %} current {% endif %}"><svg><use xlink:href="/images/icons.svg#dashboard"></use></svg></i></a>
         <span class="nav-des nano block">Dashboard</span>
       </li>
       <li class="pad-t-1-2 pad-b-1-2">
-        <a href="#"><i class="icon i-32 nav-btn"><svg><use xlink:href="/images/icons.svg#build-recipe"></use></svg></i></a>
+        <a href="/builder/"><i class="icon i-32 nav-btn {% if page.url contains 'builder' %} current {% endif %}"><svg><use xlink:href="/images/icons.svg#recipe-builder"></use></svg></i></a>
         <span class="nav-des nano block">Recipe<br>Builder</span>
       </li>
       <li class="pad-t-1-2 pad-b-1-2">
-        <a href="#"><i class="icon i-32 nav-btn"><svg><use xlink:href="/images/icons.svg#recipes"></use></svg></i></a>
+        <a href="/recipe-book/"><i class="icon i-32 nav-btn {% if page.url contains 'recipe-book' or page.url contains 'recipe' %} current {% endif %}"><svg><use xlink:href="/images/icons.svg#recipe-book"></use></svg></i></a>
         <span class="nav-des nano block">Recipe<br>Book</span>
       </li>
       <li class="pad-t-1-2 pad-b-1-2">
-        <a href="#"><i class="icon i-32 nav-btn"><svg><use xlink:href="/images/icons.svg#bookmark"></use></svg></i></a>
+        <a href="/saved/"><i class="icon i-32 nav-btn {% if page.url contains 'saved' %} current {% endif %}"><svg><use xlink:href="/images/icons.svg#saved-recipes"></use></svg></i></a>
         <span class="nav-des nano block">Saved<br>Recipe</span>
       </li>
     </ul>

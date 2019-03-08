@@ -1,11 +1,15 @@
+header {
+  z-index: 4;
+}
+
 .nav-bar {
   height: 100vh;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  left: -8em;
-  width: 8em;
+  left: -6em;
+  width: 6em;
 }
 
 .logo svg {
@@ -16,8 +20,9 @@
   margin-bottom: auto;
 }
 
-.nav-btn {
-  color: var(--color-black);
+.nav-btn svg {
+  fill: var(--color-neutral-beige);
+  stroke: var(--color-black);
 }
 
 .profile-container {
@@ -25,16 +30,20 @@
   border-radius: 500px;
 }
 
-.nav-btn.current {
-  color: var(--color-secondary);
+.nav-btn.current svg {
+  stroke: var(--color-secondary);
 }
 
-.nav-btn:hover {
-  color: var(--color-primary);
+.nav-btn:hover svg {
+  stroke: var(--color-primary);
 }
 
 .nav-des {
   display: none;
+}
+
+.logo-space {
+  padding-top: 2.8rem;
 }
 
 /* toggle */
@@ -42,8 +51,8 @@
   position: fixed;
   display: inline-block;
   cursor: pointer;
-  z-index: 4;
-  left: 2em;
+  z-index: 6;
+  left: 1em;
 }
 
 #one,
@@ -88,21 +97,28 @@
 }
 
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 40em) {
 
   .nav-bar {
     left: 0;
+    width: 8em;
   }
 
   .nav-des {
     display: block;
   }
   .profile-container {
-    width: 100px;
+    width: 80px;
+  }
+
+  .logo-space {
+    padding-top: 0;
+    padding-bottom: 2.8rem;
   }
 
   .hamburger {
-    position: fixed;
+    position: absolute;
+    top: -500000px;
     display: none;
   }
 
@@ -111,4 +127,5 @@
   #three {
   display: none;
   }
+
 }
