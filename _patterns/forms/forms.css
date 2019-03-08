@@ -13,6 +13,17 @@ input[type="checkbox"]:invalid + label::before {
   border-right: none;
   border-top: none;
   border-color: var(--color-dark-gray);
+  background: transparent;
+}
+
+.round-field,
+.round-field:invalid {
+  border-top: 2px solid var(--color-dark-gray);
+  border-bottom: 2px solid var(--color-dark-gray);
+  border-left: 2px solid var(--color-dark-gray);
+  border-right: 2px solid var(--color-dark-gray);
+  border-radius: 15px;
+  background: transparent;
 }
 
 #time {
@@ -49,66 +60,79 @@ input:invalid + label + .error-message {
   display: inline-block;
 }
 
-#rating-one[type="radio"]:checked ~ [for="rating-one"] {
-  color: var(--color-primary);
+.rating svg {
+  fill: none;
+  stroke: var(--color-primary);
 }
 
-#rating-two[type="radio"]:checked ~ [for="rating-one"],
-#rating-two[type="radio"]:checked ~ [for="rating-two"] {
-  color: var(--color-primary);
+#rating-one[type="radio"]:checked ~ [for="rating-one"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
-#rating-three[type="radio"]:checked ~ [for="rating-one"],
-#rating-three[type="radio"]:checked ~ [for="rating-two"],
-#rating-three[type="radio"]:checked ~ [for="rating-three"] {
-  color: var(--color-primary);
+#rating-two[type="radio"]:checked ~ [for="rating-one"] svg,
+#rating-two[type="radio"]:checked ~ [for="rating-two"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
-#rating-four[type="radio"]:checked ~ [for="rating-one"],
-#rating-four[type="radio"]:checked ~ [for="rating-two"],
-#rating-four[type="radio"]:checked ~ [for="rating-three"],
-#rating-four[type="radio"]:checked ~ [for="rating-four"] {
-  color: var(--color-primary);
+#rating-three[type="radio"]:checked ~ [for="rating-one"] svg,
+#rating-three[type="radio"]:checked ~ [for="rating-two"] svg,
+#rating-three[type="radio"]:checked ~ [for="rating-three"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
-#rating-five[type="radio"]:checked ~ [for="rating-one"],
-#rating-five[type="radio"]:checked ~ [for="rating-two"],
-#rating-five[type="radio"]:checked ~ [for="rating-three"],
-#rating-five[type="radio"]:checked ~ [for="rating-four"],
-#rating-five[type="radio"]:checked ~ [for="rating-five"] {
-  color: var(--color-primary);
+#rating-four[type="radio"]:checked ~ [for="rating-one"] svg,
+#rating-four[type="radio"]:checked ~ [for="rating-two"] svg,
+#rating-four[type="radio"]:checked ~ [for="rating-three"] svg,
+#rating-four[type="radio"]:checked ~ [for="rating-four"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
-#rating-one[type="radio"]:hover ~ [for="rating-one"] {
-  color: var(--color-primary);
-  fill: var(--color-black);
+#rating-five[type="radio"]:checked ~ [for="rating-one"] svg,
+#rating-five[type="radio"]:checked ~ [for="rating-two"] svg,
+#rating-five[type="radio"]:checked ~ [for="rating-three"] svg,
+#rating-five[type="radio"]:checked ~ [for="rating-four"] svg,
+#rating-five[type="radio"]:checked ~ [for="rating-five"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
-#rating-two[type="radio"]:hover ~ [for="rating-one"],
-#rating-two[type="radio"]:hover ~ [for="rating-two"] {
-  color: var(--color-primary);
-  fill: var(--color-black);
+#rating-one[type="radio"]:hover ~ [for="rating-one"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
-#rating-three[type="radio"]:hover ~ [for="rating-one"],
-#rating-three[type="radio"]:hover ~ [for="rating-two"],
-#rating-three[type="radio"]:hover ~ [for="rating-three"] {
-  color: var(--color-primary);
+#rating-two[type="radio"]:hover ~ [for="rating-one"] svg,
+#rating-two[type="radio"]:hover ~ [for="rating-two"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
-#rating-four[type="radio"]:hover ~ [for="rating-one"],
-#rating-four[type="radio"]:hover ~ [for="rating-two"],
-#rating-four[type="radio"]:hover ~ [for="rating-three"],
-#rating-four[type="radio"]:hover ~ [for="rating-four"] {
-  color: var(--color-primary);
+#rating-three[type="radio"]:hover ~ [for="rating-one"] svg,
+#rating-three[type="radio"]:hover ~ [for="rating-two"] svg,
+#rating-three[type="radio"]:hover ~ [for="rating-three"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
-#rating-five[type="radio"]:hover ~ [for="rating-one"],
-#rating-five[type="radio"]:hover ~ [for="rating-two"],
-#rating-five[type="radio"]:hover ~ [for="rating-three"],
-#rating-five[type="radio"]:hover ~ [for="rating-four"],
-#rating-five[type="radio"]:hover ~ [for="rating-five"] {
-  color: var(--color-primary);
+#rating-four[type="radio"]:hover ~ [for="rating-one"] svg,
+#rating-four[type="radio"]:hover ~ [for="rating-two"] svg,
+#rating-four[type="radio"]:hover ~ [for="rating-three"] svg,
+#rating-four[type="radio"]:hover ~ [for="rating-four"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
+}
+
+#rating-five[type="radio"]:hover ~ [for="rating-one"] svg,
+#rating-five[type="radio"]:hover ~ [for="rating-two"] svg,
+#rating-five[type="radio"]:hover ~ [for="rating-three"] svg,
+#rating-five[type="radio"]:hover ~ [for="rating-four"] svg,
+#rating-five[type="radio"]:hover ~ [for="rating-five"] svg {
+  fill: var(--color-primary);
+  stroke: var(--color-primary-dark);
 }
 
 /* -- end ratings -- */

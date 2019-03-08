@@ -17,7 +17,7 @@
   height: 7em;
   width: 7em;
   overflow: hidden;
-  border-radius: 10000px;
+  border-radius: 10px;
 }
 
 .profile-card .profile-container img {
@@ -27,31 +27,51 @@
 }
 
 .recently-border {
-  border: 2px solid var(--color-primary);
+  background-color: var(--color-neutral-beige);
   border-radius: 15px;
-  overflow: hidden;
 }
 
-.recently-container {
-  width: 2em;
-  height: 2em;
+.recently-border a {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .recently-viewed-img {
   width: 4em;
+  height: 4em;
+  object-fit: cover;
+}
+
+
+.bookmark-img {
+  /* width: 15em; */
+  height: 16em;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.bookmark-img img{
+  width: 16em;
   height: inherit;
   object-fit: cover;
 }
 
-/* .book-icon-card {
-  display: flex;
-  flex-direction: row;
+.profile-card .profile-container img {
+  width: 7em;
+  height: inherit;
+  object-fit: cover;
+}
+
+.book-icon-card {
+  border-radius: 0 0 10px 10px;
   background-color: var(--color-neutral-beige);
 }
 
-.book-text {
-  flex-grow: 1;
-} */
+.bookmark-container svg {
+  stroke: var(--color-black);
+  fill: none;
+}
 
 .steps-title,
 .steps-text {
@@ -92,15 +112,4 @@
 
 .pin-check:checked ~ .pin-check::before {
   border-color: var(--color-secondary) !important;
-}
-
-@media only screen and (min-width: 32em) {
-  .recently-container {
-    width: 4em;
-    height: 4em;
-  }
-
-  .recently-viewed-img {
-    width: 7em;
-  }
 }

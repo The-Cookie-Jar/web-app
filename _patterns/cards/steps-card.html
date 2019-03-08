@@ -1,11 +1,14 @@
-<div class="step relative">
-    {% pattern forms/checkbox class="absolute pin-check "%}
-  <div class="island steps-border grid">
-    <div class="unit [ xs-3-4 s-3-4 m-3-4 l-3-4 xl-3-4 ] ">
-      <h4 class="push-0 steps-title">Step 1</h4>
-    </div>
-    <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] ">
-      <p class="pad-t-1-2 push-0 steps-text">Whisk the chickpea flour, spices, milk, vanilla and salt together in a shallow container.</p>
-    </div>
-  </div>
-</div>
+<ul class="step list-group">
+    {% for step in include.steps %}
+
+
+      <li class="relative push">
+        {% pattern forms/checkbox class="absolute pin-check " id=forloop.index %}
+        <div class="island steps-border">
+        <h4 class="push-0 steps-title">Step {{forloop.index}}</h4>
+        <p class="pad-t-1-2 push-0 steps-text">{{step}}</p>
+        </div>
+      </li>
+  {% endfor %}
+
+</ul>
