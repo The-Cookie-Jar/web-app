@@ -4,7 +4,8 @@
       <h3 class="upper normal push-0">Ingredients</h3>
     </div>
     <div class="unit [ xs-1-4 s-1-4 m-1-4 l-1-4 xl-1-4 ] text-right">
-      <i class="icon i-32"><svg><use xlink:href="/images/icons.svg#bookmark"></use></svg></i>
+      <input type="checkbox" id="bookmark-{{include.id}}" name="bookmark" {% if include.adChecked %}{{include.adChecked}}{% endif %}>
+      <label class="hide-custom-input" for="bookmark-{{include.id}}"><i class="icon i-32"><svg><use xlink:href="/images/icons.svg#saved-recipes"></use></svg></i></label>
     </div>
     <div class="unit [ xs-1 s-1 m-1 l-1 xl-1 ] ">
       <ul class="list-group push-0">

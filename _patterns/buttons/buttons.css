@@ -138,3 +138,7 @@ div.remove-container {
   -webkit-transform: rotate(45deg) translate(6px, 3px);
   -moz-transform: rotate(45deg) translate(6px, 3px);
 }
+
+.block {
+  display: block;
+}
