@@ -9,11 +9,11 @@ title: Dashboard
   subText="That you might or might not mess up"
   %}
 
-  <div class="pad-t-2">
+  <div class="pad-t-2 pad-b-2">
     <ul class="grid grid-stretch list-group">
     {% assign savedRecipes = site.recipes %}
-      {% for recipe in savedRecipes %}
-        <li class="unit [ xs-1 s-1-2 m-1-4 l-1-4 ] unit-content-distribute">{% pattern cards/bookmarks id=forloop.index %}</li>
+      {% for recipe in savedRecipes limit:8 %}
+        <li class="unit [ xs-1 s-1-2 m-1-4 l-1-4 ] unit-content-distribute">{% pattern cards/bookmarks id=forloop.index adChecked="checked"%}</li>
         <style>
           #bookmark-{{forloop.index}}[type="checkbox"]:checked ~ [for="bookmark-{{forloop.index}}"] svg {
             fill: var(--color-dark-gray);

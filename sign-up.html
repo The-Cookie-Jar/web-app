@@ -1,0 +1,24 @@
+---
+layout: default
+title: Homepage
+meta: App designed to teach you how to eat in
+
+---
+  <section class="load-screen relative">
+    <div class="log-in text-center island-2 max-length absolute pin-c">
+      <h1 class="sans push">
+        <i class="icon i-96"><svg><use xlink:href="/images/icons.svg#logo"></use></svg></i>
+        <span class="block mega black-text">Eat in</span>
+      </h1>
+
+      <form class="pad-t" action="index.html" method="POST">
+        {% pattern forms/text-field formText="I am" placeholderTxt="Hailey Duncan"%}
+        {% pattern forms/time formText="Birthday is" placeholderTxt="1973-10-14"%}
+        {% pattern forms/text-field formText="My username is" placeholderTxt="greatestcookeva"%}
+
+        {% pattern forms/password%}
+
+        {% pattern buttons/basic btnText="Sign up" href="/dashboard/"%}
+      </form>
+    </div>
+  </section>
