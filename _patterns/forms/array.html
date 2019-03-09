@@ -1,20 +1,30 @@
-<div class="island-1-2">
+<div class="push">
   <div class="grid">
-    <div class="unit [ xs-1 s-1-4 m-1-4 l-1-4 ] tex">
-      <label for="name">Allergies</label>
-    </div>
-    <div class="unit [ xs-1 s-3-4 m-3-4 l-3-4 ] ">
-      <input type="text" id="name"">
+    {% if include.arrayTitle %}
+      <div class="unit [ xs-1 s-1-4 m-1-4 l-1-4 ] ">
+        <label for="name">{{include.arrayTitle | default:"Allergies"}}</label>
+      </div>
+    {% endif %}
+    <div class="{% if include.arrayTitle %} unit [ xs-1 s-3-4 m-3-4 l-3-4 ]{% else %} unit [ xs-1 s-1 m-1 l-1 ] {% endif %}">
+      <input type="text" id="name">
       <div class="array island-1-2">
           <ul class="list-group milli push-0">
             <li class="grid">
-              <p class="unit [ xs1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] push-0">peanuts</p>
+              <p class="unit [ xs1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] push-0">{{include.arrayOne | default:"peanuts"}}</p>
               <span class="unit [ xs1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] text-right">{% pattern buttons/remove-btn %}</span>
             </li>
+          {% if include.arrayTwo %}
             <li class="grid">
-              <p class="unit [ xs1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] push-0">Strawberry</p>
+              <p class="unit [ xs1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] push-0">{{include.arrayTwo}}</p>
               <span class="unit [ xs1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] text-right">{% pattern buttons/remove-btn %}</span>
             </li>
+          {% endif %}
+          {% if include.arrayThree %}
+            <li class="grid">
+              <p class="unit [ xs1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] push-0">{{include.arrayThree}}</p>
+              <span class="unit [ xs1-2 s-1-2 m-1-2 l-1-2 xl-1-2 ] text-right">{% pattern buttons/remove-btn %}</span>
+            </li>
+          {% endif %}
           </ul>
       </div>
     </div>
