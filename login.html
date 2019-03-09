@@ -11,9 +11,12 @@ meta: App designed to teach you how to eat in
         <span class="block mega black-text">Eat in</span>
       </h1>
 
-      <p class="push-2 mega slab gray-text">Eat in and you'll <br> never eat out again</p>
+      <p class="push mega slab gray-text">I see you're not <br> eating out again</p>
 
-        {% pattern buttons/basic btnText="Sign-up" addClass="block" href="/sign-up/"%}
-        {% pattern buttons/basic btnText="Login" addClass="block" href="/login/"%}
+      <form action="index.html" method="POST">
+        {% pattern forms/text-field fieldClass="round-field" singleLine=""%}
+        {% pattern forms/password fieldClass="round-field" singleLine=""%}
+        {% pattern buttons/basic btnText="Login" href="/dashboard/"%}
+      </form>
     </div>
   </section>
