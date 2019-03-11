@@ -14,7 +14,7 @@ title: Dashboard
   <ul class="grid grid-stretch list-group">
   {% assign meals = site.recipes | where:'mealTime','Lunch'  | where: 'type', 'vegan' %}
     {% for recipe in meals %}
-      <li class="unit [ xs-1 s-1-2 m-1-4 l-1-4 ] unit-content-distribute">{% pattern cards/bookmarks id=forloop.index %}</li>
+      <li class="unit [ xs-1 s-1 m-1-2 l-1-3 xl-1-4 ] unit-content-distribute">{% pattern cards/bookmarks id=forloop.index %}</li>
       <style>
         #bookmark-{{forloop.index}}[type="checkbox"]:checked ~ [for="bookmark-{{forloop.index}}"] svg {
           fill: var(--color-black);

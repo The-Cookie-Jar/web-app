@@ -84,6 +84,22 @@ main {
   color: var(--color-secondary-dark);
 }
 
+.profile-left,
+.profile-right {
+  text-align: center;
+}
+
+@media only screen and (min-width: 44em) {
+  .profile-left {
+    text-align: left;
+  }
+
+  .profile-right {
+    text-align: right;
+  }
+}
+
+
 @media only screen and (min-width: 40em) {
   main {
     margin-left: 8em;
