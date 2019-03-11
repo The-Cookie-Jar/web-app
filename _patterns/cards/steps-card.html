@@ -5,8 +5,8 @@
       <li class="relative push-1-2">
         {% pattern forms/checkbox class="absolute pin-check " id=forloop.index %}
         <div class="island steps-border">
-        <h4 class="push-0 steps-title">Step {{forloop.index}}</h4>
-        <p class="pad-t-1-2 push-0 steps-text">{{step}}</p>
+        <h4 class="push-0 steps-title">Step {{forloop.index | default:'number'}}</h4>
+        <p class="pad-t-1-2 push-0 steps-text">{{step | default:'Step guide'}}</p>
         </div>
       </li>
   {% endfor %}

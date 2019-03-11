@@ -130,3 +130,18 @@ dl dd {
 .subtle-text {
   color: var(--color-dark-gray);
 }
+
+.wrapper-no-center {
+  max-width: 62em;
+  width: 100%;
+}
+
+[type="radio"]:focus + label,
+[type="checkbox"]:focus + label {
+  outline: 3px solid black;
+  outline-offset: 2px;
+}
+
+[type="checkbox"]:focus + label::before {
+  outline: none;
+}

@@ -1,7 +1,7 @@
 <div class="island-1-4 content-fill unit-content-distribute">
-  <a href="{{recipe.url}}" class="bookmark-container link-box content-fill unit-content-distribute">
+  <a href="{{recipe.url}}" class="bookmark-container link-box content-fill unit-content-distribute" aria-label="Read more {{recipe.title}}">
     <div class="embed embed-1by1">
-      <img class="embed-item" src="{{recipe.image | default:'/images/bbq-tofu-wrap.jpg'}}" alt="photo of {{recipe.title}}">
+      <img class="embed-item" src="{{recipe.image | default:'/images/bbq-tofu-wrap.jpg'}}" alt="photo of {{recipe.title}}"  aria-label="photo of {{recipe.title}}" role="presentation">
     </div>
     <div class="island book-icon-card grid content-fill">
       <div class="unit [ xs-2-3 s-2-3 m-2-3 l-2-3 l-2-3 ] ">

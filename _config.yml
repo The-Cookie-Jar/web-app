@@ -22,9 +22,11 @@ patternbot:
     typefaces.secondary: |
       Bitter is only used for primary headings and highlighting important text.
 
-  layout:
+  layouts:
     default: |
       To be used for every page, it contains the masthead and the footer
+    recipe: |
+      To be used for recipe collection folder, it contains the style of the default and the layout for the different steps for the recipe
 
 collections:
   recipes:

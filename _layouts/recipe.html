@@ -7,10 +7,12 @@ layout: default
   introText="Here's your"
   recipe=page
   subText="I can hear your fire alarm cheering you on from here" %}
-<section class="pad-t-2">
+
+<input type="checkbox" id="mission-check" class="hide-custom-input" />
+<section class="pad-t-2 wrapper-no-center">
   <div class="grid pad-t">
     <div class="unit [ xs-1 s-1 m-1 l-1-2 xl-1-2 ] ">
-      {% pattern cards/receipe-card recipe=page %}
+      {% pattern cards/recipe-card recipe=page %}
     </div>
     <div class="unit [ xs-1 s-1 m-1 l-1-2 xl-1-2 ] gutter">
       <div class="push-2">
@@ -18,11 +20,11 @@ layout: default
 
       </div>
       <div>
-        {% pattern buttons/mission-btn %}
+        <label class="mission-btn inline-block nano push" for="mission-check"><span class="mission-start">Start</span><span class="mission-abort">Abort</span> Mission</label>
         {% pattern cards/steps-card steps=page.steps%}
 
       </div>
-      {% pattern buttons/ghost btnText="Mission Accomplished" href="/rate-experience/" %}
+      {% pattern buttons/ghost btnText="Mission Accomplished" href="/rate-experience/" addClass="rate-experience-btn"%}
     </div>
 
   </div>

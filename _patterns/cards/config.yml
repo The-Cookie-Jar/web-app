@@ -1,8 +1,43 @@
+title: "Cards"
+description: |
+  The cards are used with different purposes across our website mainly used to contain the different recipes found on our app
 patterns:
   ingredient-list:
+    title: "Ingredient list"
+    description: |
+      The list of ingredients that are found on the specific recipe.
     fields:
       - name: ingredients
         type: "object"
         data:
           source: "site.recipes[0].ingredients"
           type: recipe-ingredient
+  completed-recipe:
+    title: "Completed recipe"
+    description: |
+      The completed recipe card is specifically designed for users to describe their experience with the recipe.
+  bookmarks:
+    title: "Bookmarks"
+    description: |
+      The bookmark card is the regular display card for the different recipes, this allows users to add the recipe to their list of favourites.
+  profile-card:
+    title: "Profile"
+    description: |
+      The profile card takes users to their settings preferences.
+  recipe-card:
+    title: "Recipe"
+    description: |
+      The recipe card is a card that allows users to get additional information on how long the preparation and the execution of the recipe will take. This card is to also allow users to rate the recipe.
+  recently-viewed:
+    title: "Recently viewed"
+    description: |
+      Accent Ghost are to be used as a contrast against the basic button. It is to be used as a secondary alternative action button.
+  steps-card:
+    title: "Steps"
+    description: |
+      The steps card is to allow users to go through all of the different steps of the recipe once they accept to take on the challenge of the recipe.
+    fields:
+      - name: "steps"
+        type: "object"
+        data:
+          source: "site.recipes[0].steps[0]"

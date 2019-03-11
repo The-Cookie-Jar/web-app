@@ -1,3 +1,6 @@
+title: "Navigation"
+description: |
+  The navigation bar is to always be used to the left of the screen so users have easy access to the app's navigation. The navigation bar is to also be responsive accross all mediums and screens.
 patterns:
   nav:
     height: 700

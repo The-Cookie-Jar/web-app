@@ -1,7 +1,7 @@
 <div class="recently-border">
   <a href="{{recipe.url}}" class=" grid-middle black-text">
-    <img class="recently-viewed-img" src="{{recipe.image}}" alt="image of {{recipe.title}}">
-    <p class="push-0 gutter text-center nano">{{recipe.title}}</p>
+    <img class="recently-viewed-img" src="{{recipe.image | default:'/images/french-toast.jpg'}}" alt="Photo of {{recipe.title}}" aria-label="Photo of {{recipe.title}}" role="presentation">
+    <p class="push-0 gutter text-center nano">{{recipe.title | default:'Recipe item'}}</p>
   </a>
 
 

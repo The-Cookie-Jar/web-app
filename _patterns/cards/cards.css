@@ -5,7 +5,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(to top, rgba(235, 235, 235, .5), rgba(235, 235, 235, .5));
+  background-color: var(--color-dark-gray);
 }
 
 .remove-card,
@@ -88,23 +88,21 @@
   top: 1em;
 }
 
-#mission-check:checked ~ .step .pin-check::before  {
+#mission-check:checked ~ section .step .pin-check::before  {
   border-color: var(--color-dark-gray);
 }
 
-#mission-check:checked ~ .step .steps-border {
+#mission-check:checked ~ section .step .steps-border {
   border-color: var(--color-dark-gray);
 }
 
-#mission-check:checked ~ .step .steps-title {
+#mission-check:checked ~ section .step .steps-title {
   color: var(--color-dark-gray);
 }
 
-
-#mission-check:checked ~ .step .steps-text {
+#mission-check:checked ~ section .step .steps-text {
   color: var(--color-black);
 }
-
 
 .pin-check:checked ~ .steps-border {
   border-color: var(--color-secondary) !important;

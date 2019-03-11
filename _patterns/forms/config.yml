@@ -1,0 +1,32 @@
+title: "Forms"
+description: |
+  The form fields are to be used for the sign-up and the login page.
+patterns:
+  array:
+    title: "Storage of information"
+    description: |
+      The list of ingredients that are found on the specific recipe.
+  checkbox:
+    title: "Checkbox"
+    description: |
+      The checkbox is reserved specifically for users to be able to check the steps off as they go through.
+  empty-textfield:
+    title: "Meal selector"
+    description: |
+      The selector is to be used where users have to select their desired meal type.
+  password:
+    title: "Password"
+    description: |
+      The password field is reserved specifically for where the users must input their password information.
+  reviews:
+    title: "Reviews"
+    description: |
+      The reviews field is reserved specifically for the recipe card, so users have the ability to rate the recipe.
+  text-field:
+    title: "Text"
+    description: |
+      The text field is to be used where users need to add their names and additional user information.
+  time:
+    title: "Date"
+    description: |
+      The time field is to be used exclusively to gather the user's birthday information.
