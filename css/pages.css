@@ -30,6 +30,60 @@ main {
   margin-right: 3em;
 }
 
+.mission-btn {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: .275em 4em;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transition: all 3 00ms linear;
+  -webkit-transition: all 3 00ms linear;
+  -moz-transition: all 3 00ms linear;
+}
+
+#mission-check:checked ~ section .mission-btn {
+  background-color: var(--color-dark-gray);
+  border-color: var(--color-dark-gray);
+  color: var(--color-white);
+}
+
+.mission-abort {
+  display: none;
+}
+
+#mission-check:checked ~ .mission-btn .mission-abort {
+  display: inline;
+}
+
+#mission-check:checked ~ .mission-btn .mission-start {
+  display: none;
+}
+
+.rate-experience-btn {
+  background-color: transparent;
+  border-color: var(--color-light-gray);
+  color: var(--color-light-gray);
+  padding: .275em 4em;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+#mission-check:checked ~ section .rate-experience-btn {
+  background-color: transparent;
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  transition: all 3 00ms linear;
+  -webkit-transition: all 3 00ms linear;
+  -moz-transition: all 3 00ms linear;
+}
+
+#mission-check:checked ~ section .rate-experience-btn:hover {
+  background-color: transparent;
+  border-color: var(--color-secondary-dark);
+  color: var(--color-secondary-dark);
+}
+
 @media only screen and (min-width: 40em) {
   main {
     margin-left: 8em;

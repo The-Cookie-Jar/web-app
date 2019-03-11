@@ -9,7 +9,8 @@ title: Recipe builder
   hOne="Recipe builder"
   subText="Let's see what you have in your fridge this time" %}
 
-<form class="pad-t-2" action="index.html">
+<input type="checkbox" id="mission-check" class="hide-custom-input" />
+<form class="pad-t-2" action="index.html" role="search">
   <div class="grid  max-length-no-center">
     <div class="unit [s-1 l-1 ]">
       <div class="grid grid-middle push">
@@ -29,17 +30,49 @@ title: Recipe builder
     </div>
     <div class="unit s-1 l-1-2"><!-- empty div for grid--></div>
     <div class="unit s-1 l-1-2 pad-t">
-      {% pattern buttons/mission-btn btnText="Build my recipe" %}
+      <label class="build-recipe-btn inline-block nano push" for="mission-check">Build my recipe</label>
+      <style>
+
+
+        .built-recipes {
+          display: none;
+        }
+
+        .build-recipe-btn {
+          background-color: #62deaf;
+          border-color: #62deaf;
+          color: #fff;
+          padding: .275em 4em;
+          border-radius: 20px;
+          text-transform: uppercase;
+        }
+
+        #mission-check:checked ~ form .build-recipe-btn {
+          background-color: #8F918E;
+          border-color: #8F918E;
+          color: #fff;
+        }
+
+        #mission-check:checked ~ form .built-recipes {
+          display: inline-block;
+        }
+
+      </style>
     </div>
   </div>
-  <div class="unit [ s-1 l-1 ] pad-t">
-
+  <div class="unit [ s-1 l-1 ] pad-t wrapper-no-center pad-b-2 built-recipes">
     <h3 class="push-0 gray-text normal">What you can eat with your ingredients</h3>
     <p class="push-0 gray-text normal">Lettuce pray that they turn out ok</p>
-    <ul class="grid grid-stretch list-group pad-t-2 island">
+    <ul class="grid grid-stretch list-group pad-t-2">
       {% assign breakfast = site.recipes | where:'mealTime','Breakfast' %}
         {% for recipe in breakfast limit: 4 %}
-          <li class="unit [ xs-1 s-1 m-1-2 l-1-4 ] unit-content-distribute">{% pattern cards/bookmarks %}</li>
+          <li class="unit [ xs-1 s-1 m-1-2 l-1-4 ] unit-content-distribute">{% pattern cards/bookmarks id=forloop.index%}</li>
+          <style>
+            #bookmark-{{forloop.index}}[type="checkbox"]:checked ~ [for="bookmark-{{forloop.index}}"] svg {
+              fill: var(--color-black);
+              stroke: var(--color-black);
+            }
+          </style>
         {% endfor %}
     </ul>
   </div>

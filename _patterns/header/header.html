@@ -1,5 +1,5 @@
 <div>
-  <span class="block peta normal">{{include.introText}}</span>
-  <h1 class="push-0 tenamega">{% if include.recipe.title %}{{include.recipe.title}}{% else %}{{include.hOne}}{% endif %}</h1>
-  <p class="push-0 gray-text italic">{{include.subText}}</p>
+  <span class="block peta normal">{{include.introText | default:"Some intro"}}</span>
+  <h1 class="push-0 tenamega">{% if include.recipe.title %}{{include.recipe.title | default:"An actual heading"}}{% else %}{{include.hOne | default:"An actual heading"}}{% endif %}</h1>
+  <p class="push-0 gray-text italic">{{include.subText | default:"a follow up pun"}}</p>
 </div>

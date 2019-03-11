@@ -2,32 +2,31 @@ title: "Buttons"
 description: |
   The buttons use our primary colour to draw attention and stand out. Each button has a specific purpose:
 patterns:
-
-  basic:  basic.html
+  basic:
     title: "Basic"
     description: |
       Basic button to be used accross the different mediums when a regular button is needed
-  ghost:  ghost.html
+  ghost:
     title: "Ghost"
     description: |
       The Ghost button is to be used for navigation bar
-  accent:  accent.html
+  accent:
     title: "Accent"
     description: |
       Accent buttons are to be used as save buttons
-  accent-ghost:  accent-ghost.html
-    title: "Ghost"
+  accent-ghost:
+    title: "Accent ghost"
     description: |
       Accent Ghost are to be used as a contrast against the basic button. It is to be used as a secondary alternative action button.
-
-title: "Cards"
-description: |
-
-patterns:
-  # The key is the same as the HTML file’s name
-  basic:
-    title: ""
+  build-btn:
+    title: "Build recipe link"
     description: |
-
-  ghost:
-    title: ""
+      Accent buttons are to be used as save buttons
+  mission-btn:
+    title: "Start mission/Abort mission button"
+    description: |
+      Accent Ghost are to be used as a contrast against the basic button. It is to be used as a secondary alternative action button.
+  remove-btn:
+    title: "Remove array-list item button"
+    description: |
+      Accent Ghost are to be used as a contrast against the basic button. It is to be used as a secondary alternative action button.
